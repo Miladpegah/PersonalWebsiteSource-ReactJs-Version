@@ -20,7 +20,7 @@ class Contact extends React.Component {
 		               Contact with me
 		            </h2>
 		            <div style={{ textAlign: 'center', paddingTop: '5%' }} onMouseOver={ this.mouseOver} onMouseOut={ this.mouseOut}>
-		                  <a href="miladpegah@gmail.com">
+		                  <a href="mailto:miladpegah@gmail.com">
 		                     <span>
 		                        Get In Touch to email me.
 		                     </span>
