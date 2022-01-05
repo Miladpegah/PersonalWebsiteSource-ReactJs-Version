@@ -8,12 +8,8 @@ import Footer from './Footer';
 import Loader from './Loader';
 
 class App extends React.Component {
-  state = {load : false};
-  componentDidMount(){
-    setTimeout(() => this.setState({load : true}),3000);
-  }
+  
   render(){
-    if (this.state.load == true) {
       return(
         <>
           <Header/>
@@ -29,10 +25,6 @@ class App extends React.Component {
           <Footer/>
         </>
       ); 
-    }else{
-      return(
-        <Loader/>
-      );
     }
   }
 }
