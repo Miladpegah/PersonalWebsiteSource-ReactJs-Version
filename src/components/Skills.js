@@ -6,6 +6,7 @@ class Skills extends React.Component {
 		let phpSkill = 100;
 		let laravelSkill = 100;
 		let javascriptSkill = 50;
+		let jquerySkill = 85;
 		let reactSkill = 50;
 		let livewireSkill = 75;
 		let htmlCssSkill = 60;
@@ -20,6 +21,7 @@ class Skills extends React.Component {
 		let phpAnimation = setInterval(php, 25);
 		let laravelAnimation = setInterval(laravel, 25);
 		let javascriptAnimation = setInterval(javascript, 25);
+		let jqueryAnimation = setInterval(jquery, 25);
 		let reactAnimation = setInterval(react, 25);
 		let livewireAnimation = setInterval(livewire, 25);
 		let htmlCssAnimation = setInterval(htmlCss, 25);
@@ -35,6 +37,7 @@ class Skills extends React.Component {
 			php : 0,
 			laravel : 0,
 			javascript : 0,
+			jquery : 0,
 			react : 0,
 			livewire : 0,
 			htmlCss :0,
@@ -74,6 +77,17 @@ class Skills extends React.Component {
 			}else{
 				width.javascript++;
 				tag.style.width = width.javascript + '%';
+
+			}
+		}
+
+		function jquery(){
+			let tag = document.getElementById('jquery');
+			if (width.jquery === jquerySkill) {
+				clearInterval(jqueryAnimation);
+			}else{
+				width.jquery++;
+				tag.style.width = width.jquery + '%';
 
 			}
 		}
@@ -183,6 +197,7 @@ class Skills extends React.Component {
 			                  <li><span id={ 'php' } className="bar-expand php" ></span><em>PHP</em></li>
 			                  <li><span id={ 'laravel' } className="bar-expand php"></span><em>LARAVEL</em></li>
 			                  <li><span id={ 'javascript' } className="bar-expand javascript"></span><em>JAVASCRIPT</em></li>
+			                  <li><span id={ 'jquery' } className="bar-expand jquery"></span><em>JQuery</em></li>
 			                  <li><span id={ 'react' } className="bar-expand react"></span><em>REACT js</em></li>
 			                  <li><span id={ 'livewire' } className="bar-expand livewire"></span><em>LIVEWIRE</em></li>
 			                  <li><span id={ 'htmlCss' } className="bar-expand css"></span><em>HTML + CSS + @less + @sass</em></li>

@@ -333,6 +333,10 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: javascript 2s ease;
   	-webkit-animation: javascript 2s ease;
 }
+.jquery {
+   -moz-animation: jquery 2s ease;
+   -webkit-animation: jquery 2s ease;
+}
 .css {
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
