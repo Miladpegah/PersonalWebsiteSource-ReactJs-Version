@@ -1,6 +1,8 @@
 import React from 'react';
 import Education from './Education';
 import Skills from './Skills';
+import ArticlesAndProjects from './ArticlesAndProjects';
+import WorkExprince from './WorkExprince';
 
 
 class Resume extends React.Component {
@@ -9,7 +11,8 @@ class Resume extends React.Component {
 			<section id={"resume"}>
 			    <Education/>
 				<Skills/>			      
-
+				<WorkExprince/>
+				<ArticlesAndProjects/>
 			   </section>
 			);
 	}
